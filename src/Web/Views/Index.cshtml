@@ -1,0 +1,26 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test</title>
+</head>
+<body>
+    <main>
+        <button onclick="getWeather()">get weather</button>
+        <button onclick="getSettings()">get settings</button>
+    </main>
+
+    <script>
+        async function getWeather() {
+            await fetch('/api/weather')
+        }
+
+        async function getSettings() {
+            await fetch('/api/settings')
+        }
+    </script>
+</body>
+</html>
